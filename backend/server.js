@@ -38,17 +38,17 @@ app.get('/api/health', (req, res) => {
 });
 
 // Serve frontend in production
-if (process.env.NODE_ENV === 'production') {
-  // Try both paths: local build and Railway build (where dist is copied to backend/dist)
-  const distPath = fs.existsSync(path.join(__dirname, 'dist'))
-    ? path.join(__dirname, 'dist')
-    : path.join(__dirname, '../frontend/dist');
+// if (process.env.NODE_ENV === 'production') {
+//   // Try both paths: local build and Railway build (where dist is copied to backend/dist)
+//   const distPath = fs.existsSync(path.join(__dirname, 'dist'))
+//     ? path.join(__dirname, 'dist')
+//     : path.join(__dirname, '../frontend/dist');
   
-  app.use(express.static(distPath));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(distPath, 'index.html'));
-  });
-}
+//   app.use(express.static(distPath));
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.join(distPath, 'index.html'));
+//   });
+// }
 
 // Global error handler
 app.use((err, req, res, next) => {
