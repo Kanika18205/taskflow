@@ -7,7 +7,7 @@ A full-stack team task management app with role-based access control, project ma
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Authentication** — JWT-based signup/login with role selection (Admin/Member)
 - **Projects** — Create, edit, delete projects with color coding and status tracking
@@ -20,7 +20,7 @@ A full-stack team task management app with role-based access control, project ma
 
 ---
 
-## 🏗 Tech Stack
+## Tech Stack
 
 | Layer | Tech |
 |-------|------|
@@ -32,7 +32,7 @@ A full-stack team task management app with role-based access control, project ma
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 taskflow/
@@ -81,7 +81,7 @@ taskflow/
 
 ---
 
-## ⚙️ Local Development
+## Local Development
 
 ### Prerequisites
 - Node.js 18+
@@ -122,7 +122,7 @@ Open http://localhost:5173
 
 ---
 
-## 🌐 Deploy to Railway
+## Deploy to Railway
 
 ### Step 1: Push to GitHub
 ```bash
@@ -156,7 +156,7 @@ Railway → Settings → Custom Domain → add your domain
 
 ---
 
-## 🔐 API Reference
+## API Reference
 
 ### Auth
 | Method | Endpoint | Description |
@@ -198,7 +198,7 @@ Railway → Settings → Custom Domain → add your domain
 
 ---
 
-## 👤 Role System
+## Role System
 
 ### Global Roles
 - **Admin** — Full access to all projects, tasks, and user management
@@ -210,7 +210,7 @@ Railway → Settings → Custom Domain → add your domain
 
 ---
 
-## 🎯 Demo Accounts
+## Demo Accounts
 
 After signing up, you can create:
 - One **Admin** account (select "Admin" role on signup)
